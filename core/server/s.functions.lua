@@ -35,7 +35,7 @@ Core.GetPlayerPicture = function(source)
 
     local steam = GetIdentifier(source, "steam")
     if not steam then
-        return "https://winaero.com/blog/wp-content/uploads/2018/08/Windows-10-user-icon-big.png"
+        return "https://cdn.corerp.no/assets/Windows-10-user-icon-big.png"
     end
     local url
     PerformHttpRequest("https://steamcommunity.com/profiles/" .. tonumber(steam, 16), function(_, text, _) 
